@@ -60,6 +60,8 @@ commands.txt: Contains all the commands available for you to use.
 modules.txt:  Contains information on the programs modules and how to create user profiles.
 setup.txt:    Contains instructions on how to setup PokeBot on your Discord server.
 
+&nbsp;
+
 **Other Files**
 
 This section pertains to all files and folders in the pokebot folder.
@@ -76,7 +78,7 @@ comments/example.txt: contains all text files that contain the comments to send 
 
 &nbsp;
 
-**Additional Comments and Concerns"
+**Additional Comments and Concerns**
 
 At the moment, you will need to use a virtualenv to run the program. If this project gains more
 support, I will then create a setup.py to make the installation process more feasible.
