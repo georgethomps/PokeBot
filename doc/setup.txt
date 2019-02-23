@@ -1,0 +1,105 @@
+# SETUP DOCUMENTATION
+
+
+# 1. Document Description
+
+This document will show how users can run the Poke Bot on their own Discord servers. It's important
+to mention that at the moment, there is no setup.py, which means this document will show users how
+to create their own virtual environment to run the program. This will be concerned with OSX and
+Windows, since it's assumed most Linux users are very resourceful and most likely will already
+understand the concepts in this document.
+
+WARNING: Odds are there will be some issues when following these instructions. Everyone's computers
+handle python differently and some things may need to be switched around. You may need to refer to
+"python" or "python3" and "pip" or "pip3". Things should fall into place with some google'ing.
+
+# 2. Prerequisites
+
+To run this program, a user must have Python version 3.7+ to run the program. This is crucial because
+the bot was written with the discord.py rewrite. Users must also have pip (provided with Python
+3.7+) and virtualenv. 
+
+
+# 3. Installing Python
+
+Python Link: https://www.python.org/
+
+Installing Python is very straightforward process. For Windows and OSX, simply go to the downloads
+section and select a download for your operating system. It's important to make sure the version is
+at least Python 3.7!
+
+If you already have Python installed on your machine, you can check its version with the following
+commands.
+
+OSX Terminal: "$ python -v" or "$ python3 -v"
+Windows Command Line: Run "python" or "python3" and check the version number when in the interactive
+console. Run "quit()" to exit.
+
+
+# 4. Install Pip
+
+Pip comes included with all Python 3.7+ versions. If I'm mistaken, please let me know on GitHub so
+I can provide more extensive documentation. You may also need to use pip3 if python 3.7+ is 
+associated with the command "python3".
+
+
+# 5. Install Virtualenv
+
+This will be the trickiest part of the installation (but not difficult). First, upgrade pip with
+one of the following commands:
+
+OSX Terminal: "$ pip install --upgrade pip" or "pip3 install --upgrade pip"
+Windows Command Line: "python -m pip install --upgrade pip" or "python3 -m pip install --upgrade pip"
+
+After upgrading pip, you can install virtualenv with the following commands:
+
+OSX Terminal: "$ pip install virtualenv" or "$ pip3 install virtualenv"
+Windows Command Line: "python -m pip install virtualenv" or "python3 -m pip install virtualenv"
+
+
+# 6. Creating the virtual environment
+
+Once you have everything installed, you can create your virtual environment with these steps:
+
+OSX & Linux
+1. Open your terminal and cd to the folder where you stored the downloaded files.
+2. Run "$ python3 -m virtualenv ." or "$ python -m virtualenv ."
+3. Run "$ source bin/activate"
+4. Run "$ pip install -r requirements.txt"
+5. Run "$ deactivate"
+
+WINDOWS
+1. Open your command line and cd to the folder where you stored the downloaded files.
+2. Run "py -m virutalenv ."
+3. Run "Scripts\activate"
+4. Run "python -m pip install -r requirements.txt"
+5. Run "deactivate"
+
+WARNING: There may be an error trying to install Discord.py when running the requirements.txt. Try
+one of the following commands with a pip install to fix the issue (ex. "pip install -U ..."):
+
+"-U git+https://github.com/Rapptz/discord.py@rewrite#egg=discord.py[voice]"
+"-U https://github.com/Rapptz/discord.py/archive/rewrite.zip#egg=discord.py[voice]"
+
+
+# 7. Registering the bot with your Discord server
+
+This is somewhat extensive, so I'll be providing a link for reference. When you get to the part
+where you find your bot's token, find the TOKEN variable at the top of the PokeBot.py file and
+replace it with your bot's token (ex. "TOKEN = 'XXXXXXXXXXXXXXXXXXXXX'").
+
+Instructions: https://www.devdungeon.com/content/make-discord-bot-python
+
+
+# 8. Running the bot
+
+The worst is over, now you can run your bot! To do this, simply follow steps 1 and 3 in section
+6, then go through the following instructions:
+
+INSTRUCTIONS
+1. cd into the pokebot folder
+2. Run "python PokeBot.py" or "python3 PokeBot.py"
+
+Now that you have your bot running and working, view the commands documentation to utilize all of
+PokeBot's useful features!
+

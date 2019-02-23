@@ -1,0 +1,48 @@
+# MODULES DOCUMENTATION
+
+
+# 1. Document Description
+
+This document describes the role of the program's modules and how they can be utilized by the
+program's users.
+
+
+# 2. Data Manager (DataManager package)
+
+The Data Manager is responsible for managing all user profile settings and retrieving comments for
+the bot to display to users. This data is managed through the files in the "users" and "comments"
+folders
+
+
+DATA MANAGER FILES & FOLDERS
+
+FILE "user_data.txt" ("users" folder)
+DESCRIPTION: This file allows the Data Manager to view the names of the users that may be mentioned
+in Discord as well as what text files are associated with each user. Each user is associated with
+one text file that contains all of the comments that the bot may select to send to a particular user.
+
+WARNING: DO NOT TOUCH THIS FILE! ONLY MODIFY THE PROFILE SETTINGS THROUGH DISCORD!
+
+FOLDER "comments"
+DESCRIPTION: This folder contains all of the text files that are linked in the "user_data.txt".
+Each comment must solely be written on one individual line. This can be done with programs such as
+NotePad or TextEdit (if this is not done, the bot will return incomplete comments).
+These files should be marked with the extention ".txt".  
+
+
+# 3. Poke List
+
+The Poke List is simply responsible for managing which users should be provided comments by the bot
+when a user is mentioned in Discord. For example, you may have profile settings for both users
+George and Noah, but you may only want the bot to provide comments when only Noah is mentioned.
+
+To specify which users should be targeted by the bot, you can simply load them or unload them from
+the Poke List (view the commands documentation for more).
+
+
+# 4. Poke Bot
+
+The Poke Bot is the bot that sends comments to the Discord server. Users can run commands with the
+bot to utilize the function of the Data Manager and Poke List (see the commands documentation for
+more).
+

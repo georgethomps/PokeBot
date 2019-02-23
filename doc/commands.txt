@@ -1,0 +1,66 @@
+# BOT COMMANDS DOCUMENTATION
+
+
+# 1.Document Description & Instructions
+
+This document contains information regarding all the commands users can run with the bot.
+This includes information regarding the commands' names, arguments and what they specifically do.
+These descriptions will be very surface level and it's advised that one read the modules text file
+to fully understand the command descriptions.
+
+To run the commands, simply type "$" followed by the command's name
+For example, to run the "pokelist" command, type "$pokelist".
+ 
+If a command requires arguments, simply type them after the command name, each separated by a space.
+For example, to run the "createprofile" command, type "$createprofile [name] [file]"
+
+
+# 2. Poke List Commands
+
+$pokelist
+Description: View all users that are currently loaded in the Poke List.
+
+$load [user]
+Description: Load a user into the Poke List.
+
+$unload [user]
+Description: Unload a user from the Poke List.
+
+$clearlist
+Description: Clear all users from the Poke List.
+
+
+# 3. Data Manager Commands
+
+$userprofiles
+Description: Print all of your current user profile settings.
+
+
+$createprofile [user] [comment file]
+Description: Create a user profile that can be used for the future. This requires a text file of
+all comments the bot could possibly send to the user.
+
+WARNINGS: Make sure each comment is solely written on only one line of the text file. 
+It's best to use a Text Editor like NotePad to do this. It's also advised to only use underscores or
+hyphens and avoid spaces and any unusual characters.
+
+Good file name: "user_comments.txt" or "user-comments.txt"
+Bad file name:  "user comments$.txt"
+
+If a bad name is used for the text file, you may need to manually delete the line from the user
+profile settings file to get the bot to work again.
+
+
+$deleteprofile [user]
+Description: Delete a user profile from your profile settings.
+
+
+$clearprofiles
+Description: Clear all user profiles from your settings.
+
+
+# 4. Utility Commands
+
+$terminate
+Description: Have the bot log out from Discord
+

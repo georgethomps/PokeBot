@@ -1,0 +1,3 @@
+George, you're a weird dude.
+George, why didn't you make a setup.py?
+George, the python novice!
